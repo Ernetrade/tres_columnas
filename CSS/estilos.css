@@ -8,20 +8,22 @@ html, body {
 }
 
 body{
-    
-    font-family: 'Lexend Deca', sans-serif;
     display: flex;
-    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
     align-items: center;
+    justify-content: center;
     background-color: lightgray;
 }
 
 
 /*Principal-----------*/
 .principal{
+    
     display: flex;
     min-width: 320px;
     max-width: 768px;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Columnas----------*/
@@ -33,9 +35,7 @@ body{
     transition: width .3s ease-in-out;
     cursor: pointer;
 }
-.columna .activa{
-    width: 50%;
-}
+
 
 .columna:first-of-type{
     border-radius: 1rem 0 0 1rem;
@@ -101,3 +101,35 @@ body{
     color: white;
     border-style:double;
 }
+
+/*RESPONSIVE------------------------------------------------------------------*/
+@media screen and (max-width: 730px){
+    body {
+        display: inherit;
+        padding: 2rem;
+    }
+
+   .principal{
+    display: inherit;
+    margin: auto;
+   }
+
+   .columna{
+    margin:auto;
+    width: 250px;
+   }
+
+   .columna:first-of-type{
+    border-radius:inherit;
+   }
+
+   .columna:last-of-type{
+    border-radius:inherit;
+   }
+  
+}
+
+    
+
+
+ 
